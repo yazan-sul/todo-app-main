@@ -1,0 +1,82 @@
+
+#theme-toggle {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+#theme-toggle svg {
+  opacity: 0.4;
+  transition: opacity 2s, rotate 2s;
+  position: absolute;
+  
+  
+}
+body.darkMode #theme-toggle svg {
+  color: white
+}
+#theme-toggle:hover svg {
+  opacity: 1;
+  rotate: 180deg;
+
+}
+body {
+
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background: hsl(237, 14%, 26%);
+  color: var(--text-area);
+
+}
+
+.img-container #bg-img{
+  max-width: 100%;
+}
+.bg-container {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  display: flex;
+  height: 200px;
+  gap: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-image: url('../images/bg-desktop-dark.jpg');
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #cccccc;
+}
+.credits {
+    color: #777;
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .credits a {
+    color: #ff1616;
+    font-weight: bold;
+  }
+  .sun-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url('images/icon-sun.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
