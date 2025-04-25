@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Todo app</title>
-  </head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <body>
-    <header>
-      <div class="bg-container">
-        
-        <h1>T O D O</h1>
+  <title>Frontend Mentor | Todo app</title>
+</head>
 
-        <button id="theme-toggle">
-          <img src="images/icon-sun.svg" alt="My Happy SVG" />
-        </button>
-        
-      </div>
-    </header>
-    <div class="credits">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Yazan Sulaiman</a>.
+<body>
+  <header>
+    <div class="bg-container">
+
+      <h1>T O D O</h1>
+
+      <button id="theme-toggle">
+        <img src="images/icon-sun.svg" alt="My Happy SVG" />
+      </button>
     </div>
-  </body>
+    <div class="container">
+      <form class="toDo-card-input">
+        <input id="newTodo" name="newTodo" type="text" placeholder="enter Todo" required>
+      </form>
+      <div class="toDo-card">
+        <ul>
+          <li>Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="credits">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="#">Yazan Sulaiman</a>.
+  </div>
+</body>
+
 </html>
