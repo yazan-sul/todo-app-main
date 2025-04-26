@@ -9,14 +9,11 @@ function addTodo(event) {
         const ul = document.getElementById('todo-list');
         const li = document.createElement('li');
         li.textContent = todoText;
-
-
         ul.appendChild(li);
         input.value = '';
         counter++;
         flags.push(true);
         updateCounter();
-
         li.addEventListener('click', function () {
             const index = Array.from(ul.children).indexOf(li);
 
@@ -51,36 +48,36 @@ footerButtons.forEach(button => {
             if (btnText === "All") {
                 todo.style.display = 'block';
             } else if (btnText == "Active") {
-                if(todo.classList.contains('completed'))
+                if (todo.classList.contains('completed'))
                     todo.style.display = 'none';
                 else
                     todo.style.display = 'block';
-                
-            } else if (btnText === "Completed"){
-                if(todo.classList.contains('completed'))
+
+            } else if (btnText === "Completed") {
+                if (todo.classList.contains('completed'))
                     todo.style.display = 'block';
                 else
-                    todo.style.display = 'none';            }
+                    todo.style.display = 'none';
+            }
         })
     });
 });
 
 const clearbtn = document.getElementById('clear-btn');
-clearbtn.addEventListener('click', function(){
+clearbtn.addEventListener('click', function () {
     const todos = document.querySelectorAll('#todo-list li');
     todos.forEach(todo => {
-        if(todo.classList.contains('completed'))
-        {
+        if (todo.classList.contains('completed')) {
             todo.remove();
         }
     })
 });
 const themeToggle = document.getElementById('theme-toggle');
-const themeIcon   = document.getElementById('theme-icon');
-const body        = document.body;
+const themeIcon = document.getElementById('theme-icon');
+const body = document.body;
 
 themeToggle.addEventListener('click', () => {
-  const isLight = body.classList.toggle('lightMode');
+    const isLight = body.classList.toggle('lightMode');
 
-  themeIcon.src = isLight ? 'images/icon-moon.svg' : 'images/icon-sun.svg';  
+    themeIcon.src = isLight ? 'images/icon-moon.svg' : 'images/icon-sun.svg';
 });

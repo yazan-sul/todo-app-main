@@ -39,7 +39,7 @@ body.lightMode {
   font-size: 25px;
   display: flex;
   height: 200px;
-  gap: 400px;
+  gap: 270px;
   justify-content: center;
   align-items: center;
 }
@@ -181,3 +181,7 @@ button:hover{
     transform: rotate(180deg);
   }
   
+  #todo-list li {
+    cursor: grab;
+    transition: transform 0.2s ease;
+}
