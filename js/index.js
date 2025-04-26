@@ -1,3 +1,4 @@
+let counter =0;
 function addTodo(event){
     event.preventDefault();
     const input = document.getElementById('newTodo');
@@ -9,5 +10,9 @@ function addTodo(event){
         li.textContent = todoText;
         ul.appendChild(li);
         input.value = '';
+        counter++;
+        const itemsCounter = document.getElementById('items-counter');
+        itemsCounter.textContent = itemsCounter.textContent = counter + " items left";
+
     }
 }

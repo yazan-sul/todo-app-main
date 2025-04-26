@@ -112,7 +112,29 @@ header {
   border-bottom: 0.5px solid hsl(234, 39%, 85%); 
 
 }
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #777;
 
+}
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button:hover{
+  color: #5d9ad3;
+}
+#items-counter {
+  color: #777;
+  justify-content: start;
+  margin-right: 30px;
+}
 .credits {
     color: #777;
     position: fixed;
