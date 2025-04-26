@@ -64,3 +64,14 @@ footerButtons.forEach(button => {
         })
     });
 });
+
+const clearbtn = document.getElementById('clear-btn');
+clearbtn.addEventListener('click', function(){
+    const todos = document.querySelectorAll('#todo-list li');
+    todos.forEach(todo => {
+        if(todo.classList.contains('completed'))
+        {
+            todo.remove();
+        }
+    })
+});
