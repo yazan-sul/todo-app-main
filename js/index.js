@@ -75,3 +75,12 @@ clearbtn.addEventListener('click', function(){
         }
     })
 });
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon   = document.getElementById('theme-icon');
+const body        = document.body;
+
+themeToggle.addEventListener('click', () => {
+  const isLight = body.classList.toggle('lightMode');
+
+  themeIcon.src = isLight ? 'images/icon-moon.svg' : 'images/icon-sun.svg';  
+});
