@@ -23,40 +23,42 @@
   <body class="lightMode">
     <header>
       <div class="bg-container">
-        <h1>T O D O</h1>
+        <h1>todo</h1>
 
         <button id="theme-toggle">
           <img id="theme-icon" src="images/icon-sun.svg" alt="My Happy SVG" />
         </button>
       </div>
-      <div class="container">
-        <form class="toDo-card-input" onsubmit="addTodo(event)">
-          <input
-            id="newTodo"
-            name="newTodo"
-            type="text"
-            placeholder="enter Todo"
-            required
-          />
-        </form>
-        <div class="toDo-card">
-          <ul id="todo-list"></ul>
-          <div id="footer-section-card" class="footer-section">
-            <label id="items-counter">items left</label>
-            <span class="footer-buttons">
-              <button id="all-btn">All</button>
-              <button id="active-btn">Active</button>
-              <button id="completed-btn">Completed</button>
-            </span>
-            <button id="clear-btn">Clear Completed</button>
+      <main>
+        <div class="container">
+          <form class="toDo-card-input" onsubmit="addTodo(event)">
+            <input
+              id="newTodo"
+              name="newTodo"
+              type="text"
+              placeholder="enter Todo"
+              required
+            />
+          </form>
+          <div class="toDo-card">
+            <ul id="todo-list"></ul>
+            <div id="footer-section-card" class="footer-section">
+              <span id="items-counter">items left</span>
+              <span class="footer-buttons">
+                <button id="all-btn">All</button>
+                <button id="active-btn">Active</button>
+                <button id="completed-btn">Completed</button>
+              </span>
+              <button id="clear-btn">Clear Completed</button>
+            </div>
           </div>
         </div>
-      </div>
+      </main>
     </header>
 
     <div class="credits">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">
         >Frontend Mentor</a
       >. Coded by <a href="#">Yazan Sulaiman</a>.
     </div>
