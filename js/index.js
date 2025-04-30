@@ -1,5 +1,4 @@
 const flags = [];
-let counter = 0;
 function addTodo(event) {
     event.preventDefault();
     const input = document.getElementById('newTodo');
@@ -11,7 +10,6 @@ function addTodo(event) {
         li.textContent = todoText;
         ul.appendChild(li);
         input.value = '';
-        counter++;
         flags.push(true);
         updateCounter();
         li.addEventListener('click', function () {
@@ -47,7 +45,7 @@ footerButtons.forEach(button => {
         todos.forEach(todo => {
             if (btnText === "All") {
                 todo.style.display = 'block';
-            } else if (btnText == "Active") {
+            } else if (btnText === "Active") {
                 if (todo.classList.contains('completed'))
                     todo.style.display = 'none';
                 else
